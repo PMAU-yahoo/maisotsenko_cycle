@@ -6,4 +6,4 @@ What to install (libraries)
 
 What inputs are needed (weather files, HX dimensions...)
 
-What ouputs the user gets (heat exchanged, temperature and humidity of working and product flows...)
+What outputs the user gets (heat exchanged, temperature and humidity of working and product flows...)
