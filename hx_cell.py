@@ -5,7 +5,7 @@ class HXCell:
   This class models the heat exchanged in one single cell known the input properties of both flows
   """
   def __init__(self, length):
-    # todo: add any other required inputs, like dimensions
+    # todo: add any other required inputs, like dimensions (all fix parameters should be in the __init__ list, like "lenght", and all variables in the list below, like self._working_temperature_in
     self._length = length
     self._working_temperature_in = None
     self._working_relative_humidity_in = None
@@ -17,7 +17,7 @@ class HXCell:
     self._product_relative_humidity_out = None
 
   def heat_exchange_model(self):
-    # todo: add all equations using the variables defined in __init__ and erase this:
+    # todo: add all equations using the variables defined in __init__ and erase this. Yo can add all together here or divide them in parts and call each part here (like _latent_exchange)
     self._working_temperature_out = self._working_temperature_in
     self._product_temperature_out = self._product_temperature_in
     self._latent_exchange()
@@ -26,6 +26,7 @@ class HXCell:
     self._working_relative_humidity_out = self._working_relative_humidity_in
     self._product_relative_humidity_out = self._product_relative_humidity_in
 
+  # todo: all inputs should have two functions, @property and .setter
   @property
   def working_temperature_in(self):
     """
@@ -42,6 +43,7 @@ class HXCell:
     """
     self._working_temperature_in = value
 
+  # todo: all outputs should have only one function, @property
   @property
   def working_temperature_out(self):
     """
